@@ -24,7 +24,6 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\ExtraDtos\ExtraDtos.csproj" />
     <ProjectReference Include="..\StockMarketApp.Dtos\StockMarketApp.Dtos.csproj" />
     <ProjectReference Include="..\StockMarketLibrary\StockMarketLibrary.csproj" />
   </ItemGroup>
