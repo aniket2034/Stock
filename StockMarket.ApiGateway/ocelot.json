@@ -1,0 +1,73 @@
+{
+  "Routes": [
+    {
+      "DownstreamPathTemplate": "/api/Admin",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 44387
+        }
+      ],
+      "UpstreamPathTemplate": "/Adminservice"
+    },
+    {
+      "DownstreamPathTemplate": "/api/Auth/{url}",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 44366
+        }
+      ],
+      "UpstreamPathTemplate": "/AuthService/{url}"
+    },
+    {
+      "DownstreamPathTemplate": "/api/Auth",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 44366
+        }
+      ],
+      "UpstreamPathTemplate": "/AuthService"
+    },
+    {
+      "DownstreamPathTemplate": "/api/Admin/{url}",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 44387
+        }
+      ],
+      "UpstreamPathTemplate": "/AdminService/{url}"
+    },
+    {
+      "DownstreamPathTemplate": "/api/User/{url}",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 44369
+        }
+      ],
+      "UpstreamPathTemplate": "/UserService/{url}"
+    },
+    {
+      "DownstreamPathTemplate": "/api/User",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 44369
+        }
+      ],
+      "UpstreamPathTemplate": "/UserService"
+    }
+  ],
+  "GlobalConfiguration": {
+    "BaseUrl": "https://localhost:44392"
+  }
+}
