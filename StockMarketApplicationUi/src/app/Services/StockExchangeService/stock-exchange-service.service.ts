@@ -10,7 +10,7 @@ export class StockExchangeServiceService {
 
   constructor(private client: HttpClient) { }
 
-  path:string = "https://localhost:44392";
+  path:string = "http://localhost:44392";
 
   addStockExchange(stockexchange: StockExchange):Observable<StockExchange>
   {

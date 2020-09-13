@@ -1,0 +1,10 @@
+{
+  "dependencies": {
+    "mssql1": {
+      "resourceId": "/subscriptions/[parameters('subscriptionId')]/resourceGroups/[parameters('resourceGroupName')]/providers/Microsoft.Sql/servers/stocks1103/databases/StockMarketDB3",
+      "type": "mssql.azure",
+      "connectionId": "SqlConnectionString",
+      "secretStore": "AzureAppSettings"
+    }
+  }
+}

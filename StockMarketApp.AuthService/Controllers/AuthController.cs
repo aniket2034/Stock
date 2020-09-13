@@ -17,6 +17,8 @@ namespace StockMarketApp.AuthService.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
+    
+
     public class AuthController : ControllerBase
     {
         private IRepository<User> repository;

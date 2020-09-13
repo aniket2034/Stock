@@ -57,7 +57,7 @@ export class AdminManageExchangeComponent implements OnInit {
       {
           console.log(res);
           console.log('added stock exchange');
-          window.location.reload();
+          alert("added Stock Exchange");
       },(err)=>{
         console.log(err.error)
       }

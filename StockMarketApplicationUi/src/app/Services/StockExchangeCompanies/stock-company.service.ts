@@ -8,7 +8,7 @@ import { Observable } from 'rxjs';
 })
 export class StockCompanyService {
 
-  path:string = "https://localhost:44392";
+  path:string = "http://localhost:44392";
   constructor(private client: HttpClient) { }
 
   public AddCompanyStock(sc: StockCompany):Observable<any>

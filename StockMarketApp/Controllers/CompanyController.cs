@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Mvc;
 using StockMarketApp.AdminService.Repository;
 using StockMarketLibrary;
 using System;
@@ -10,6 +11,7 @@ namespace StockMarketApp.AdminService.Controllers
 {
     [Route("api/Admin/[controller]")]
     [ApiController]
+    [Authorize(Roles = "Admin")]
     public class CompanyController: ControllerBase
     {
         private IRepository<Company> repository;
@@ -20,6 +22,7 @@ namespace StockMarketApp.AdminService.Controllers
         }
 
         [HttpGet("getAllCompanies")]
+        
         public IEnumerable<Company> Get()
         {
             return repository.Get();

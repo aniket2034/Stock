@@ -9,7 +9,7 @@ import {InputData} from './../../Models/AccountService/input-data';
   providedIn: 'root'
 })
 export class AuthServiceService {
-  path: string = "https://localhost:44392";
+  path: string = "http://localhost:44392";
   constructor(private http: HttpClient) {
    }
 

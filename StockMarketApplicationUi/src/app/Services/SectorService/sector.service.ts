@@ -8,7 +8,7 @@ import { Sector } from 'src/app/Models/CompanyService/sector';
 })
 export class SectorService {
 
-  path:string = "https://localhost:44392";
+  path:string = "http://localhost:44392";
   constructor(private client: HttpClient) { }
 
   public AddSector(sector:Sector):Observable<any>

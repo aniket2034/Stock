@@ -13,7 +13,7 @@ import {StockExchange} from './../../Models/CompanyService/stock-exchange'
 })
 export class CompanyServiceService {
 
-  path:string = "https://localhost:44392";
+  path:string = "http://localhost:44392";
 
   constructor(private client: HttpClient) { }
 
